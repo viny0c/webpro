@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preinscription a INSAm</title>
+    <link rel="stylesheet" href="/accueil.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">ISAm</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="">Concours</a></li>
+                    <li><a href="/preinscription">Preinscription</a></li>
+                    <li><a href="/inscription">Inscription</a></li>
+                    <li><a href="">Notes</a></li>
+                    <li><a href="">Enroulement</a></li>
+               </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href=""><button class="btn">Search</button></a>
+            </div>
+        </div> 
+
+            <h1>Choisissez une formation de votre choix, et effectuer une <span>Preinscriotion</span></h1>
+            
+        <section class="container">
+            <div class="liste">
+                <% let var1= "facultes des sciences economiques et des gestion apliquees" %>
+                <% let var2= "ecole normale superieur d'enseignant technique" %>
+                <% let var3= "ecole doctorale des sciences fondamentales et appliquees" %>
+                <% let var4= "ecole des lettres et sciences humaines" %>
+                <% let var5= "ecoles doctorale des sciences sociales et humaines" %>
+                <% let var6= "facultes des sciences magistrales et juridiques" %>
+
+                <ul>
+                    <li><a class="lien" href="/page1"><%= var1%></a></li>
+                    <li><a class="lien" href="/page1"> <%= var2%></a></li>
+                    <li><a class="lien" href="/page1"><%= var3%></a></li>
+                    <li><a class="lien" href="/page1"><%= var4%></a></li>
+                    <li><a class="lien" href="/page1"><%= var5%></a></li>
+                    <li><a class="lien" href="/page1"><%= var6%></a></li>
+              
+                </ul>
+            </div>
+        </section>
+<%-include("partiels/footer") %>
